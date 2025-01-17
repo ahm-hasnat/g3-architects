@@ -1,4 +1,296 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 *{
     font-family: "Work Sans", serif;
+    margin: 0;
+}
+.header{
+    width: 100%;
+    background-color: rgba(255, 144, 14, 0.1);
+    margin: 0;
+    padding: 0; 
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin: 0 9rem;
+    padding-top: 1.8rem;
+}
+.navlink ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    list-style: none;
+   gap: 2rem;
+   
+}
+.navlink a{
+    text-decoration: none;
+}
+
+/* baner section */
+#baner{
+    margin: 0 auto;
+    margin-top: 6rem;
+    width: 80%;
+}
+
+.banertext{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+.image{
+    display: flex;
+    justify-content: center;
+}
+.image img{
+    width: 90%;
+    padding-bottom: 2.5rem;
+}
+
+    
+nav h1{
+    color:rgba(19, 19, 19, 1) ;
+    font-size:1.8rem ;
+    font-weight:bold ;
+}
+.navlink a{
+    color: rgba(66, 66, 66, 1);
+    font-weight: 500;
+    size: 1.2rem;
+
+}
+
+#baner h1{
+    color: rgba(19, 19, 19, 1);
+    font-size: 2.6rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    margin: 1rem 0;
+}
+#baner p,#team p,#feature p,.fact p{
+    color: rgba(114, 114, 114, 1);
+    font-size: 0.8rem;
+    font-weight: normal;
+}
+.navbtn{
+    font-size: 0.9rem;
+    font-weight: 700;
+    padding: 0.8rem 0.9rem;
+    color: #ffffff;
+    background-color: rgba(255, 144, 14, 1);
+    border: none;
+    border-radius: 0.4rem;
+    margin-bottom: 2.5rem;
+    margin-top: 1.5rem;
+}
+
+.navbtn:hover{
+    color: #000;
+    background-color: cadetblue;
+    cursor: pointer;
+}
+
+
+/* main start */
+main{
+    width: 100%;
+}
+
+#team{
+    width: 70%;
+    margin: 70px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+}
+
+.teamimg{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.5rem;
+}
+.teamimg img{
+    width: 240px;
+    height: 240px;
+}
+#team h1{
+    font-size: 1.9rem;
+    margin-bottom: 1.5rem;
+}
+.qspan {
+    color: rgba(114, 114, 114, 1);
+    font-weight: 600;
+}
+.ofspan{
+    color: rgba(19, 19, 19, 1);
+    font-weight: bold;
+}
+.fspan{
+    color: rgba(255, 144, 14, 1);
+    font-weight: bold;
+}
+#feature{
+    margin: 0 auto;
+    width: 78%; 
+    margin-bottom: 3rem;
+} 
+.features{
+    padding-top: 1.6rem;
+    width: 25rem;
+}
+.fcontainer{
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    flex-direction:row;
+    align-items: flex-start;
+    
+}
+.fcontainer h1{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000;
+    border-left:5px solid rgba(255, 144, 14, 1) ;
+    padding:0 1rem;
+    margin-bottom: 1.2rem;
+}
+
+.cardcon{
+   display: flex;
+   flex-direction: column;
+   gap: 1rem;
+   margin-top: 30px;
+}
+.card {
+width: 100%;
+border: 0.5px solid rgba(114, 114, 114, 0.057);
+border-radius: 6px;
+box-shadow: 5px 5px 5px rgba(114, 114, 114, 0.084);
+padding: 12px;
+}
+.card h2{
+    font-size: 1.2rem;
+    color: rgba(19, 19, 19, 1);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.imgbtn{
+    width: 29rem;
+}
+.imgbtn img{
+    width: 100%;
+    height: 40.5rem;
+}
+.featurebtn h2{
+    font-size: 2.6rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+.featurebtn h5{
+    font-size: 1rem;
+    font-weight: normal;
+    color: #ffffff;
+}
+.featurebtn{
+    background-color: rgba(255, 144, 14, 1);
+    border: none;
+    border-radius: 10px;
+    padding: 1.5rem;
+  margin-top: -4.5rem;
+  margin-left: -3rem;
+}
+
+/* fact cont start */
+#fact{
+    width: 78%;
+    margin: 0 auto;
+}
+.fact{
+    width: 100%;
+
+}
+.factcon{
+    display: flex;
+    justify-content: space-between;
+    margin: 5rem 0;
+}
+.factcard{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid rgba(255, 144, 14, 1);
+    padding: 0.8rem;
+    width: 9rem;
+    height: 9rem;
+    margin:0 2rem;
+}
+
+.fact h1{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 1.5rem;
+}
+.fact h2{
+    font-size: 2rem;
+    font-weight: 600;
+    color: #000; 
+}
+
+.factcard img{
+    width: 2rem;
+    height: 2rem;
+}
+
+@media  screen and (max-width :576px) {
+   .header nav, .header ul{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    }
+    
+    .featurebtn {
+        display: none;}
+   
+  #team{
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 15px;
+  }
+  .fcontainer{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 1rem;
+  }
+    .teamimg{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);  
+    }
+  }
+
+@media  screen and (min-width:576px) and (max-width:992px){
+    #team{
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 15px;
+      }
+      .teamimg{
+        display: grid;
+        grid-template-columns: repeat(2,1fr); 
+}
+.fcontainer{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    gap: 3rem;
+  }
 }
