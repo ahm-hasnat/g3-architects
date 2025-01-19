@@ -374,6 +374,18 @@ padding: 12px;
     html{
         font-size: 16px;
     }
+    nav{
+        width: 90%;
+        display: flex;
+        justify-content: space-around;
+        margin: 0rem auto;
+        padding-top:3rem ;
+        gap: 2rem;
+    }
+    .nav h1{
+        margin: 0;
+        font-size: 1.55rem;
+    }
     #team{
         display: flex;
         flex-direction: column-reverse;
@@ -415,5 +427,11 @@ padding: 12px;
 }
 .fcontainer br{
     display: none;
+}
+.factcon{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+    gap: 2rem;
 }
 }
