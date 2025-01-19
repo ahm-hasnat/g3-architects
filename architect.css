@@ -434,4 +434,8 @@ padding: 12px;
     justify-items: center;
     gap: 2rem;
 }
+.sponsoricon img{
+ width: 4rem;
+ gap: 2rem;
+}
 }
