@@ -2,6 +2,8 @@
 *{
     font-family: "Work Sans", serif;
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 .header{
     width: 100%;
@@ -295,36 +297,71 @@ padding: 12px;
     }
 
 @media  screen and (max-width :576px) {
+    html{
+        font-size: 14px;
+    }
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
    .header nav, .header ul{
     display: flex;
     flex-direction: column;
     gap: 15px;
     }
-    
-    .featurebtn {
+   
+    .featurebtn{
         display: none;}
    
   #team{
     display: flex;
     flex-direction: column-reverse;
-    padding: 15px;
+    padding: 1rem;
+    text-align: center;
+    margin: 3rem auto;
+    gap: 0.5rem;
+  }
+  .teamimg{
+    display: grid;
+    grid-template-columns: repeat(1,1fr); 
+    width:90% ;
+}
+  .teamimg img{
+    width:100% ;
+
   }
   .fcontainer{
     display: flex;
     flex-direction: column;
     padding: 15px;
     gap: 1rem;
+    align-items: center;
+    text-align: center;
   }
-    .teamimg{
-        display: grid;
-        grid-template-columns: repeat(1,1fr);  
-    }
+  .fcontainer h1{
+    font-size: 2.5rem;
+    padding-left: 1rem;
+    width: 100%;
+    margin: 1.5rem auto;
+  }
+  .fact{
+    text-align: center;
+  }
+  .factcon{
+    justify-items: center;
+  }
+    
     .sponsoricon{
         display: flex;
         justify-content: center;
         flex-direction: column;
         align-items: center;
         gap: 10px;
+  }
+  .cardcon{
+    text-align: center;
+    margin: 2rem auto;
   }
   .factcon{
     display:grid;
@@ -333,7 +370,10 @@ padding: 12px;
    }
   }
 
-@media  screen and (min-width:576px) and (max-width:992px) {
+@media  screen and (min-width:577px) and (max-width:992px) {
+    html{
+        font-size: 16px;
+    }
     #team{
         display: flex;
         flex-direction: column-reverse;
@@ -346,7 +386,34 @@ padding: 12px;
 .fcontainer{
     display: flex;
     flex-direction: column;
-    padding: 50px;
+    justify-content: center;
+    width: fit-content;
+    padding: 1rem;
     gap: 3rem;
+    margin: 0 auto;
+    text-align: center;
   }
+  .features{
+    margin: 0 auto;
+    width: 80%;
+  }
+  #team{
+    text-align: center;
+  }
+  .imgbtn{
+    margin: 0 auto;
+  }
+  .fact{
+    text-align: center;
+  }
+  .fcontainer h1{
+    font-size: 2.5rem;
+    padding-left: 1rem;
+    width: 100%;
+    margin: 1.5rem auto;
+    text-align: start;
+}
+.fcontainer br{
+    display: none;
+}
 }
